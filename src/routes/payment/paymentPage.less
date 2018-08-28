@@ -1,0 +1,205 @@
+@import '../../commonStyle/commonStyleConstants';
+
+.root {
+  flex:1;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background:@background-all;
+  overflow-y:auto;
+}
+
+.contentRoot {
+    display: flex;
+    width:100%;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background:@background-all;
+    overflow-y:auto;
+  }
+
+  .titleView{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width:100%;
+      height:110rem/@pTor;
+      background: linear-gradient(#F75A0E,#FF7837);
+      text-align: center;
+      padding-top:33rem/@pTor;
+      box-sizing: border-box;
+      font-size: @button_b-height-small;
+      color:white;
+      margin-bottom: 15rem/@pTor;
+  }
+
+  .usableNum{
+      margin-top: 23rem/@pTor;
+      font-size: @text-font-small;
+      color:white;
+  }
+
+  .numAndTime{
+      width:100%;
+      
+  }
+
+  .item{
+    width:100%;
+    display:flex;
+    color:@font-color-nomal-deep;
+    font-size: @text-font-caption;
+  }
+
+  .itemInput{
+      margin-left: 23rem/@pTor;
+      flex:1;
+      border:none;
+  }
+
+  .riskInfo{
+      width:100%;
+      display:flex;
+      box-sizing: border-box;
+      padding-left: 19rem/@pTor;
+      justify-content:flex-start ;
+      color:#2D2D2D;
+      font-size: @text-font-12;
+      margin-right:24rem/@pTor;
+      //margin-left:17rem/@pTor;
+      box-sizing: border-box;
+  }
+
+  .content{
+      display: flex;
+      width:100%;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .commonFont{
+    color:@font-color-nomal-deep;
+    font-size: @text-font-caption;
+  }
+
+  .colorFont{
+      color:@brand-primary-light;
+  }
+
+  .extra{
+      color:#AFACAC;
+      font-size: @text-font-small;
+      text-align: center;
+  }
+
+  .commonFont2{
+      font-size: @text-font-12;
+      color:@font-color-nomal-deep;
+  }
+
+  .extra1{
+      color:#0099CC;
+      font-size: @text-font-12;
+      display: flex;
+      align-items: center;
+  }
+
+  .extra2{
+      background-color: #0099CC;
+      border-radius: 50%;
+      color:white;    
+      font-size: @text-font-12;
+      width:0.4rem;
+      height:0.4rem;
+      text-align: center;
+      line-height: 0.4rem;
+      margin-right: 0.2rem;
+  }
+
+  .extra3{
+      color:@brand-primary-light;
+      font-size: @button_b-height-small;
+
+  }
+
+  .tqsyl{
+      font-size: @text-font-small;
+      color:@font-color-nomal-deep;
+      margin-left:5rem/@pTor;
+      line-height: @text-font-small;
+  }
+
+  .commonFont3{
+      font-size:16rem/@pTor;
+      color:@brand-primary-light;
+  }
+
+  .commonFont4{
+    font-size:14rem/@pTor;
+    color:@font-color-nomal-deep;
+}
+
+//.riskInfo{
+//    color:#2D2D2D;
+//    font-size: @text-font-12;
+//    margin-right:24rem/@pTor;
+//    //margin-left:17rem/@pTor;
+//  box-sizing: border-box;
+//}
+
+.checkContainer{
+    min-width:19rem/@pTor;
+    height:19rem/@pTor;
+    background-color: @brand-primary-light;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:7rem/@pTor;
+}
+
+.check{
+    width:12rem/@pTor;
+    height:12rem/@pTor;
+    background-color: @brand-primary-light;
+}
+
+.highlight{
+    color:@brand-primary-light;
+}
+
+
+.checkPwd{
+  width: 100%;
+  height: 50rem/@pTor;
+  background-color: @background-F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .checkPwdText{
+    background-color: @background-F7F7F7;
+    border: none;
+    font-size: @text-font-big;
+  }
+  .checkPwdImg{
+    color: @brand-primary-light;
+  }
+}
+
+
+.nextButton{
+  position: fixed !important;
+  bottom: 0;
+height: 50rem/@pTor;
+min-height: 50rem/@pTor;
+margin-top:30rem/@pTor;
+width:100%;
+line-height: 50rem/@pTor;
+border-radius: 0px;
+background-color:@brand-primary-light;
+font-size: @text-font-big;
+color: #FFFFFF !important;
+display: block;
+}

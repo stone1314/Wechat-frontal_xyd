@@ -1,0 +1,45 @@
+@import "../../commonStyle/commonStyleConstants";
+.root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: @background-all;
+  flex-direction: column;
+  overflow-y: auto;
+  font-family: @font-regular;
+  .ldContent {
+    width: 100%;
+    height: 100%-(220rem/@pTor);
+    overflow-y: auto;
+    position: relative;
+    box-sizing: border-box;
+    .noLendInfo{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: @button_b-font-big;
+      color: @font-color-nomal-deep;
+    }
+  }
+  /*.ldContent {
+    width: 100%;
+    height: 100%-(220rem/@pTor);
+
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+
+    position: relative;
+    box-sizing: border-box;
+    .noLendInfo{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: @button_b-font-big;
+      color: @font-color-nomal-deep;
+    }
+  }*/
+}

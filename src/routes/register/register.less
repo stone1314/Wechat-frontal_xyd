@@ -1,0 +1,112 @@
+@import "../../commonStyle/commonStyleConstants";
+.main{
+  display:flex;
+  height: 100%;
+  width:100%;
+  background: @background-all;
+  flex-direction: column;
+  overflow-y: auto;
+  font-family: @font-regular;
+  .backBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40rem/@pTor;
+    background-color: #FFFFFF;
+    font-family: @font-regular;
+    color: @font-color666;
+    font-size: 14rem/@pTor;
+    box-sizing: border-box;
+    .backImg{
+      margin-left: 15rem/@pTor;
+      margin-right: 6rem/@pTor;
+      width: 9rem/@pTor;
+      height: 15rem/@pTor;
+    }
+  }
+  .logoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:117rem/@pTor;
+    .logoImg{
+      width: 136rem/@pTor;
+      height: 38rem/@pTor;
+    }
+  }
+  .textDiv{
+    display: flex;
+    height: 104rem/@pTor;
+    background-color: #FFFFFF;
+    flex-flow: column;
+    padding-left: 18rem/@pTor;
+    box-sizing: border-box;
+    .testDiv_ID{
+      display: flex;
+      align-items: center;
+      height: 51rem/@pTor;
+      .textDiv_test{
+        margin-left: 15rem/@pTor;
+        color: @font-color333;
+        font-size: 15rem/@pTor;
+      }
+      .shoujiImg{
+        width: 17rem/@pTor;
+        height: 24rem/@pTor;
+      }
+      .mimaImg{
+        width:16rem/@pTor;
+        height: 21rem/@pTor;
+      }
+    }
+    .hr{
+      border-bottom: 1rem/@pTor solid @background-all;
+    }
+  }
+  .forgetPwd{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 11rem/@pTor;
+    color: @font-color8D;
+    height:40rem/@pTor;
+    box-sizing: border-box;
+    padding-right: 10rem/@pTor;
+  }
+  .btnDiv{
+    display: flex;
+    justify-content: center;
+    .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18rem/@pTor;
+      background-color: @brand-primary-deep;
+      //border-radius: 4rem/@pTor;
+      width: 345rem/@pTor;
+      height: 49rem/@pTor;
+      color:@font-colorFFF;
+    }
+    .btnC{
+      background-color: red;
+    }
+  }
+  .registerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 159rem/@pTor;
+    .registerBtn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: @brand-primary-deep;
+      font-size: 16rem/@pTor;
+      border: 1rem/@pTor solid @brand-primary-deep;
+      border-radius: 4rem/@pTor;
+      width: 104rem/@pTor;
+      height: 42rem/@pTor;
+    }
+  }
+
+}

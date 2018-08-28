@@ -1,0 +1,109 @@
+@import '../../../commonStyle/commonStyleConstants.less';
+
+.root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: @fill-color-EEEEEE; //rgb(255, 255, 255);
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.title {
+  background-color: @fill-color-FFFFFF;
+  //height: 40rem/@pTor;
+  padding: 12.5rem/@pTor 12.5rem/@pTor 12.5rem/@pTor 15rem/@pTor;
+}
+
+.title div {
+  display: inline-block;
+}
+
+.title div span {
+  float: left;
+  line-height: 150%;
+}
+
+.detail {
+  float: right;
+  font-size: 18rem/@pTor;
+  margin-right: 145rem/@pTor;
+}
+
+div .detailTitle {
+  background: linear-gradient(#F75A0E, #FF7431) !important;
+  height: 140rem/@pTor;
+  text-align: center;
+  color: @fill-color-FFFFFF;
+  font-family: @font-regular;
+}
+
+div .detailNum {
+  font-family: @font-regular;
+  padding-top: 44.5rem/@pTor;
+  padding-bottom: 15.5rem/@pTor;
+  font-size: 30rem/@pTor;
+}
+
+div .detailMsg {
+  padding-top: 20rem/@pTor;
+  padding-left: 22.5rem/@pTor;
+  padding-right: 23.5rem/@pTor;
+  padding-bottom: 21rem/@pTor;
+  background-color: @fill-color-FFFFFF;
+}
+
+.type {
+  font-size: 16rem/@pTor;
+  padding-bottom: 20.5rem/@pTor;
+  border-bottom: 1px solid @fill-color-EEEEEE;
+}
+
+.row {
+  margin-top: 20.5rem/@pTor;
+  font-size: 15rem/@pTor;
+}
+
+.name {
+  color: @font-color666;
+}
+
+.value {
+  float: right;
+  color: @font-color333;
+}
+
+.words {
+  width: 217rem/@pTor;
+  word-wrap: break-word;
+  text-align: right;
+}
+
+.note {
+  .name();
+  margin-top: 18rem/@pTor;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
+.noteMsg {
+  font-size: 1px;
+  float: left;
+  background-color: @fill-color-EEEEEE;
+ /* padding-left: ;
+  padding-bottom: ;
+  padding-right: ;*/
+  padding: 10px 10px 10px 10px;
+  color: @font-color-ABABAB;
+  position: absolute;
+  top: -18px;
+  left: 89rem/@pTor;
+}
+
+.noteSymbol{
+  display: block;
+  border-bottom: 1px solid @font-color-ABABAB;
+  margin-left: 24px;
+  margin-right: 21px;
+}

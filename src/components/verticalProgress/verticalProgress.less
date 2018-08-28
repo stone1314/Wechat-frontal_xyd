@@ -1,0 +1,133 @@
+@import '../../commonStyle/commonStyleConstants';
+.root {
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding-top:25rem/@pTor ;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.titleRowHead{
+  width:5.813%;
+  height:100rem/@pTor;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.titleRowBody{
+    width:94.186%;
+    height:100rem/@pTor;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left:15rem/@pTor;
+    box-sizing: border-box;
+}
+
+.bodyRowHead{
+    width:5.813%;
+    height:59rem/@pTor;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bodyRowBody{
+    width:94.186%;
+    height:59rem/@pTor;
+    display: flex;
+    position: relative;  
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left:15rem/@pTor;
+    box-sizing: border-box;
+}
+
+.exclamation{
+    width:20rem/@pTor;
+    height:20rem/@pTor;
+    position: absolute;
+    top:0;
+    font-family:"iconfont" !important;
+    border-radius: 50%;
+    background-color: @brand-primary-light;
+    color:white;
+    font-size: 16rem/@pTor;
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    width:1rem/@pTor;
+    height:100%;
+    background-color: #CECCCC;
+    transform:scaleX(0.5);
+}
+
+.grayBall{
+    width:9rem/@pTor;
+    height:9rem/@pTor;
+    position: absolute;
+    top:0;
+    border-radius: 50%;
+    background-color: #CECCCC;
+    margin-top:3rem/@pTor;
+}
+
+
+.titleRowBodyText{
+    font-size: 17rem/@pTor;
+    color:#2A2A2A;
+    position: relative;
+    width:100%
+}
+
+.titleRowBodyText:before{
+    content: attr(beforeText);
+    color: @brand-primary-light;
+    font-size: 20rem/@pTor;
+    position: absolute;
+    top:33rem/@pTor;
+    left: 0;
+
+}
+
+.titleRowBodyText:after{
+    content: attr(afterText);
+    color: #AFACAC;
+    font-size: 12rem/@pTor;
+    position: absolute;
+    top:58rem/@pTor;
+    left: 0;
+    
+}
+
+.bodyRowBodyText{
+    font-size: 15rem/@pTor;
+    color:#2A2A2A;
+    position: relative;
+    width:100%
+}
+
+.bodyRowBodyText:after{
+    content: attr(afterText);
+    color: #AFACAC;
+    font-size: 12rem/@pTor;
+    position: absolute;
+    top:21rem/@pTor;
+    left: 0;
+    
+}
+    
+
+

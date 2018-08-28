@@ -1,0 +1,95 @@
+@import '../../commonStyle/commonStyleConstants.less';
+
+.main {
+  width: 100%;
+  height: 100%;
+  font-family: @font-regular;
+}
+
+.bankChoseName {
+  margin-left: 19rem/@pTor;
+}
+
+.bankChoseImg {
+  max-width: 22rem/@pTor;
+  max-height: 22rem/@pTor;
+  width: 100%;
+  height: 100%;
+  margin-right: 10rem/@pTor;
+}
+
+.vcodeText {
+  color: #f75a0e;
+  font-size: 13rem/@pTor;
+}
+.vcodeTextDisabled{
+  color:#ffba99;
+  font-size: 13rem/@pTor;
+}
+
+.vcodeSendTip {
+  background-color: #e3e3e3;
+  color: #2a2a2a;
+  padding: 5rem/@pTor 15rem/@pTor;
+  font-size: 12rem/@pTor;
+}
+
+.agreement {
+  margin-right: 15rem/@pTor;
+  .text {
+    font-size: 12rem/@pTor;
+  }
+  .color {
+    color: #0099cc
+  }
+}
+
+.btnSure {
+  background: @brand-primary-deep;
+  color: @font-color-white
+}
+
+.voiceMsg{
+  color: #0099cc;
+  text-align: center;
+  font-size: 12rem/@pTor;
+}
+
+:global(.am-checkbox.am-checkbox-checked .am-checkbox-inner) {
+  border-color: @brand-primary-deep;
+  background: @brand-primary-deep;
+}
+:global(.am-modal-content){
+  background-color: #f7f7f7;
+}
+:global(.am-modal-button-group-h .am-modal-button){
+  color:#0080fc;
+  font-size: 18rem/@pTor;
+}
+.toastContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50rem/@pTor;
+  .toastCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 231rem/@pTor;
+    height: 50rem/@pTor;
+    background-color: @background-FFFFFF;
+    .conText {
+      border: none;
+      width: 120rem/@pTor;
+      height: 25rem/@pTor;
+      font-size: @text-font-big;
+      color: @font-color333;
+      display: inline;
+    }
+    .conImg {
+      width: 80rem/@pTor;
+      height: 34rem/@pTor;
+    }
+  }
+}

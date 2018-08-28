@@ -1,0 +1,105 @@
+@import "../../commonStyle/commonStyleConstants";
+
+.root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: @background-all;
+  flex-direction: column;
+  overflow-y: auto;
+  font-family: @font-regular;
+  .bank {
+    height: 91rem/@pTor;
+    width: 100%;
+    text-align: center;
+    img {
+      width: 223rem/@pTor;
+      margin-top: 12rem/@pTor;
+      margin-bottom: 12rem/@pTor;
+    }
+  }
+  .content {
+    font-size: @text-font-caption;
+    .block {
+      backgroundColor: @background-FFFFFF;
+    }
+    .row {
+      padding: 18rem/@pTor 15rem/@pTor  18rem/@pTor 14rem/@pTor;
+      background-color: @fill-color-FFFFFF;
+      .title {
+        width: 80rem/@pTor;
+        float: left;
+      }
+      input{
+        border: none;
+      }
+    }
+    .note {
+      padding-left: 14rem/@pTor;
+      padding-right: 15rem/@pTor;
+      margin-top: 15rem/@pTor;
+      margin-bottom: 15rem/@pTor;
+      a {
+        font-size: @text-font-12;
+        color: #0099CC;
+      }
+      span {
+        font-size: @text-font-caption;
+      }
+    }
+  }
+}
+
+.itemLeft {
+  margin-left: 15.5rem/@pTor;
+  backgroundColor: #eeeeee;
+  border: none;
+  height: 1px;
+}
+
+.modalBank {
+  :global(.am-modal-header) {
+    padding-bottom: 5px;
+  }
+  img{
+    width: 50rem/@pTor;
+    margin-top: 10rem/@pTor;
+    margin-bottom: 10rem/@pTor;
+  }
+
+  .scroll {
+    height: 110px;
+    overflow: scroll;
+    .bottom {
+      margin-bottom: 19rem/@pTor;
+      button {
+        background-color: #38D321;
+        width: 50rem/@pTor;
+        height: 50rem/@pTor;
+        border-radius: 50%;
+        border: solid #DEDEDE 0.5px;
+        color: white;
+        i {
+          font-size: 20rem/@pTor;
+        }
+      }
+    }
+  }
+
+  .content {
+    font-size: @text-font-14;
+  }
+}
+
+.nextButton {
+  height: 42rem/@pTor;
+  min-height: 50rem/@pTor;
+  margin-top: 14rem/@pTor;
+  width: 100%;
+  line-height: 50rem/@pTor;
+  border-radius: 3rem/@pTor;
+  background-color: @brand-primary-light;
+  color: #FFFFFF !important;
+  display: block;
+
+}

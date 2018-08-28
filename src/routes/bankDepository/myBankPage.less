@@ -1,0 +1,77 @@
+@import '../../commonStyle/commonStyleConstants';
+
+.myBankRoot {
+ display: flex;
+  height: 100%;
+  width: 100%;
+  background: @fill-color-EEEEEE; //rgb(255, 255, 255);
+  flex-direction: column;
+  overflow-y: auto;
+  .rootTitle{
+    font-size: 18rem/@pTor;
+    margin-top: 8rem/@pTor;
+  }
+  .rootNote{
+    font-size: 12rem/@pTor;
+    margin-top: 8rem/@pTor;
+  }
+}
+
+.btn2  {
+  width:100%;
+  height: 58rem/@pTor;
+  background: @background-F75A0E;
+  color: @fill-color-FFFFFF;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  z-index: 1;
+}
+
+.myBankRoot :global(.am-list-item) {
+  height: 67rem/@pTor;
+}
+
+.myBankRoot :global(.am-list-header){
+  padding:0 0 0 0;
+}
+
+.myBankRoot :global(.am-list-item .am-list-line .am-list-extra) {
+  flex-basis: 10%;
+}
+
+.myBankRoot :global(.am-list-item .am-list-line .am-list-content) {
+  font-size: 16rem/@pTor;
+}
+
+.myBankRoot :global(.am-list-item .am-list-line .am-list-brief) {
+  font-size: 12rem/@pTor;
+  color: #9b9b9b;
+  line-height:1;
+}
+
+.wo{
+  width: 45rem/@pTor;
+  height: 45rem/@pTor;
+  border-radius: 35rem/@pTor;
+  line-height: 180%;
+  background: @font-color-input-name;
+  color: @fill-color-FFFFFF;
+  border: 1px solid @font-color-input-name;
+  font-size: 20rem/@pTor;
+}
+
+.move{
+   height:100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling:touch
+}
+
+.listPage{
+  height:180%;
+}
+
+.tailNo{
+  font-size: 0.32rem;
+  color: #9b9b9b;
+}

@@ -1,0 +1,223 @@
+@import "../../commonStyle/commonStyleConstants";
+.lendList {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  background: @background-all;
+  flex-direction: column;
+  overflow-y: auto;
+  font-family: @font-regular;
+  .noLendInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: @button_b-font-big;
+    color: @font-color-nomal-deep;
+  }
+  .backBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40rem/@pTor;
+    background-color: #FFFFFF;
+    font-family: @font-regular;
+    color: @font-color666;
+    font-size: 14rem/@pTor;
+    box-sizing: border-box;
+    .backImg{
+      margin-left: 11rem/@pTor;
+      margin-right: 6rem/@pTor;
+      width: 10rem/@pTor;
+      height: 18rem/@pTor;
+    }
+    .backImgText{
+      width: 28rem/@pTor;
+      height: 40rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+    }
+    .backTitle{
+      width: 270rem/@pTor;
+      height: 40rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .backPro{
+      width: 50rem/@pTor;
+      height: 40rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  .lendProBody {
+    width: 100%;
+    height: 100%-(220rem/@pTor);
+    overflow-y: auto;
+    .lendPro{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 122rem/@pTor;
+      margin-top: 15rem/@pTor;
+      margin-bottom: 15rem/@pTor;
+      background-color: @background-FFFFFF;
+      .lendProLine1{
+        flex-grow: 1;
+        height: 61rem/@pTor;
+        display: flex;
+        .lendProPoint{
+          width: 24rem/@pTor;
+          height: 61rem/@pTor;
+          padding-left: 13rem/@pTor;
+          padding-top: 19rem/@pTor;
+          box-sizing: border-box;
+          .lendProP{
+            width: 3rem/@pTor;
+            height: 10rem/@pTor;
+            background-color: @brand-primary-light;
+            border-radius: 2rem/@pTor;
+          }
+        }
+        .lendProText{
+          flex-grow: 1;
+          padding-top: 16rem/@pTor;
+          box-sizing: border-box;
+          font-size: @text-font-mid;
+          color: @font-color333;
+        }
+        .lendProLevel{
+          width: 81rem/@pTor;
+          color: @font-color-29A000;
+          font-size: @text-font-12;
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 18rem/@pTor;
+          padding-top: 18rem/@pTor;
+          box-sizing: border-box;
+        }
+      }
+      .lendProLine2{
+        flex-grow: 1;
+        height: 61rem/@pTor;
+        display: flex;
+        font-size: @text-font-micro;
+        color: @font-color8D;
+        padding-top: 5rem/@pTor;
+        box-sizing: border-box;
+        .lendColumn1{
+          flex-grow: 1;
+          padding-left: 12rem/@pTor;
+          box-sizing: border-box;
+          .money{
+            display: flex;
+            font-size: @text-font-19;
+            color: @brand-primary-light;
+            .moneyUnit{
+              display: flex;
+              align-items: flex-end;
+              font-size: @text-font-tiny;
+              padding-bottom: 3rem/@pTor;
+              padding-left: 4rem/@pTor;
+            }
+          }
+          .lendMoney{
+            margin-top: 8rem/@pTor;
+          }
+        }
+        .lendColumn2{
+          width: 82rem/@pTor;
+          .percent{
+            display: flex;
+            font-size: @text-font-19;
+            color: @brand-primary-light;
+            .percentUnit{
+              display: flex;
+              align-items: flex-end;
+              font-size: @text-font-tiny;
+              padding-bottom: 3rem/@pTor;
+              padding-left: 4rem/@pTor;
+            }
+          }
+          .lendPer{
+            margin-top: 8rem/@pTor;
+          }
+        }
+        .lendColumn3{
+          width: 131rem/@pTor;
+          height: 45rem/@pTor;
+          border-left: 1rem/@pTor solid @fill-color-EEEEEE;
+          padding-left: 14rem/@pTor;
+          box-sizing: border-box;
+          .lendCount{
+            padding-top: 4rem/@pTor;
+          }
+          .lendType{
+            padding-top: 14rem/@pTor;
+          }
+        }
+      }
+    }
+    .lendTable{
+      width: 100%;
+      background-color: @background-FFFFFF;
+      margin-bottom: 22rem/@pTor;
+      .lendHead{
+        width: 353rem/@pTor;
+        height: 56rem/@pTor;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: @text-font-caption;
+        color: @font-color-nomal-light;
+        margin-left: 22rem/@pTor;
+        box-sizing: border-box;
+        border-bottom: 1rem/@pTor solid @fill-color-EEEEEE;
+        margin-bottom: 10rem/@pTor;
+      }
+      .lendBody{
+        width: 100%;
+        min-height: 35rem/@pTor;
+        padding-left: 22rem/@pTor;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        .lendBodyKey{
+          min-width: 112rem/@pTor;
+          flex-grow: 1;
+          font-size: @text-font-mid;
+          color: @font-color-declare-light;
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+          .quitDateBtn{
+            margin-left: 6rem/@pTor;
+            width: 14rem/@pTor;
+            height: 14rem/@pTor;
+            background-color: @font-color-prompt;
+            border-radius: 7rem/@pTor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: @font-colorF0EFF5;
+            font-size: @text-font-12;
+          }
+        }
+        .lendBodyValue{
+          justify-content: flex-end;
+          text-align:right;
+          flex-grow: 1;
+          display: flex;
+          font-size: @text-font-mid;
+          color: @font-color-nomal-light;
+          padding-right: 22rem/@pTor;
+        }
+      }
+    }
+  }
+
+}

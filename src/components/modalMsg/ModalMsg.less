@@ -1,0 +1,85 @@
+
+
+@import '../../commonStyle/commonStyleConstants';
+.root {
+  width: 100%;
+  height: 100%;
+  //background-color: rgba(0,0,0,0.8);
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  box-sizing: border-box;
+  // filter:blur(10px);
+}
+
+/*:global(.Modalinfo .am-modal-content){
+  border-radius: 0 !important;
+}*/
+
+
+.overlay {
+  width:100%;
+  height:50%;
+  z-index: 1000;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.content{
+  position: relative;
+  background-color: white;
+  width:100%;
+  height:150rem/@pTor;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.contentText{
+  color:black;
+  font-size: @text-font-mid;
+  font-family: @font-regular;
+  flex:1;
+  min-width: 100%;
+  margin-top:22rem/@pTor;
+  text-align: start;
+  margin-left: 26rem/@pTor;
+}
+
+.ModalMsg{
+  color:red;
+}
+
+
+.ModalMsg:global(.am-modal-transparent .am-modal-content .am-modal-body){
+  padding: 0 0 0 0;
+}
+
+
+.btn1{
+  float: left;
+  width: 50%;
+  height: 46px;
+  background-color: white;
+  border: 1px solid #ded5d5;
+  color: #387ade;
+}
+.btn2{
+  width: 50%;
+  height: 46px;
+  background-color: white;
+  border: 0px solid #ded5d5;
+  border-top: 1px solid #ded5d5;
+  color: #387ade;
+  font-weight: bold;
+}

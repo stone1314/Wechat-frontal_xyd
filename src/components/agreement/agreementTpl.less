@@ -1,0 +1,91 @@
+@import "../../commonStyle/commonStyleConstants";
+.agreementMainShow
+{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background: #eee;
+  z-index: 9998;
+  animation:agreementAnimation 0.5s;
+  -webkit-animation:agreementAnimation 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes agreementAnimation /* Safari and Chrome */
+{
+  from {height:0;bottom:0;}
+  to {height:100%;bottom:0;}
+}
+.agreementMainHide
+{
+  display: none;
+  //position: absolute;
+  //width: 100%;
+  //height: 100%;
+  //background: #eee;
+  //z-index: 9998;
+  //animation:agreementAnimation1 0.1s ;
+  //-webkit-animation:agreementAnimation1 0.1s ;
+  //-webkit-animation-timing-function: linear;
+  //animation-fill-mode: forwards;
+}
+@-webkit-keyframes agreementAnimation1 /* Safari and Chrome */
+{
+  from { height:100%;bottom:0;opacity: 0}
+  to{height:0;bottom:0;opacity: 1}
+}
+.backBar{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40rem/@pTor;
+  background-color: #FFFFFF;
+  font-family: @font-regular;
+  color: @font-color666;
+  font-size: 14rem/@pTor;
+  box-sizing: border-box;
+  .backImg{
+    margin-left: 11rem/@pTor;
+    margin-right: 6rem/@pTor;
+    width: 10rem/@pTor;
+    height: 18rem/@pTor;
+  }
+  .backImgText{
+    width: 32rem/@pTor;
+    height: 40rem/@pTor;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  .backTitle{
+    width: 266rem/@pTor;
+    height: 40rem/@pTor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: @button_b-font-big;
+    color: @font-color-2D2D2D;
+  }
+  .backPro{
+    width: 50rem/@pTor;
+    height: 40rem/@pTor;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+.userNotice {
+  background-color: #eee;
+  border-color: #ddd;
+  color: #666;
+  position: relative;
+  display: block;
+  margin:40rem/@pTor -1rem/@pTor -1rem/@pTor -1rem/@pTor;
+  padding: 14rem/@pTor;
+  font-size: 12rem/@pTor;
+  line-height: 18rem/@pTor;
+  white-space: pre-wrap;
+}

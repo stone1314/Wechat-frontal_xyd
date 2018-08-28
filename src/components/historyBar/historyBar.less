@@ -1,0 +1,148 @@
+@import '../../commonStyle/commonStyleConstants';
+.root {
+  width: 100%;
+  min-height: 110rem/@pTor;
+  background-color: white;
+  box-sizing: border-box;
+  padding:21rem/@pTor 5rem/@pTor 0 5rem/@pTor;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.body{
+    width: 100%;
+}
+
+.titleView{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding:0 4.5rem/@pTor;
+    margin-bottom: 37rem/@pTor;
+}
+
+.infoCell{
+    width:40.5%;
+    text-align: start;
+    color:@fill-color-2D2D2D;
+    font-size: @text-font-small;
+    position: relative;
+}
+
+.infoCell::after{
+    width:100%;
+    content:attr(valueTitle);
+    text-align: start;
+    color:#A5A5A5;
+    font-size: @text-font-micro;
+    position: absolute;
+    left:0;
+    top:18rem/@pTor;
+}
+
+.infoCellLast{
+    width:45%;
+    text-align: end;
+    color:@fill-color-2D2D2D;
+    font-size: @text-font-small;
+    position: relative;
+}
+
+.infoCellLast::after{
+    width:100%;
+    content:attr(valueTitle);
+    text-align: end;
+    color:#A5A5A5;
+    font-size: @text-font-micro;
+    position: absolute;
+    left:0;
+    top:18rem/@pTor;
+}
+
+.barContainer{
+    width:100%;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.round{
+    width:6rem/@pTor;
+    height:6rem/@pTor;
+    background-color: white;
+    border: solid @brand-primary-deep 3rem/@pTor;
+    border-radius: 50%;
+    position: relative;
+}
+
+.round::after{
+    min-width:25rem/@pTor;
+    min-height:10rem/@pTor;
+    content: "";
+    background-color: rgba(0,0,0,0);
+    border-left: dashed @brand-primary-deep 0.5px;
+    border-top: dashed @brand-primary-deep 0.5px;
+    position: absolute;
+    left:3rem/@pTor;
+    top:-14rem/@pTor;
+    z-index: 999;
+}
+
+.roundLast{
+    width:6rem/@pTor;
+    height:6rem/@pTor;
+    background-color: white;
+    border: solid @brand-primary-deep 3rem/@pTor;
+    border-radius: 50%;
+    position: relative;
+}
+
+.roundLast::after{
+    min-width:25rem/@pTor;
+    min-height:10rem/@pTor;
+    content: "";
+    background-color: rgba(0,0,0,0);
+    border-right: dashed @brand-primary-deep 0.5px;
+    border-top: dashed @brand-primary-deep 0.5px;
+    position: absolute;
+    right:3rem/@pTor;
+    top:-14rem/@pTor;
+    z-index: 999;
+}
+
+.linef{
+    flex:180;
+    max-height: 4rem/@pTor;
+    height:4rem/@pTor;
+    background-color: @brand-primary-deep;
+    position: relative;
+}
+.linefl{
+    flex:180;
+    max-height: 4rem/@pTor;
+    height:4rem/@pTor;
+    background-color: @brand-bar-light;
+    position: relative;
+}
+.lineb{
+    flex:400;
+    max-height: 4rem/@pTor;
+    height:4rem/@pTor;
+    background-color: @brand-bar-light;
+    position: relative;
+}
+
+.linef::after , .lineb::after , .linefl::after{
+    width:100%;
+    content: attr(valueTitle);
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    position: absolute;
+    top:10rem/@pTor;
+    z-index: 999;
+    color:@brand-primary-deep;
+    font-size: @text-font-micro;
+}

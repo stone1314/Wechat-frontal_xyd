@@ -1,0 +1,65 @@
+
+@import '../../commonStyle/commonStyleConstants.less';
+
+.root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: @fill-color-EEEEEE; //rgb(255, 255, 255);
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.title {
+  background-color: @fill-color-FFFFFF;
+  color: @font-color666;
+  padding: 12.5rem/@pTor 12.5rem/@pTor 12.5rem/@pTor 15rem/@pTor;
+  position:relative;
+}
+
+.title div{
+  display: inline-block;
+}
+
+.title  span {
+  display: inline;
+  position: absolute;
+  top:17rem/@pTor;
+}
+
+.detail {
+  float: right;
+  font-size: 18rem/@pTor;
+  margin-right: 145rem/@pTor;
+}
+
+div .detailTitle {
+  height: 116rem/@pTor;
+  text-align: center;
+  font-size: 9rem/@pTor;
+  font-family: @font-regular;
+}
+
+div .detailNum {
+
+  padding-top: 30rem/@pTor;
+  padding-bottom: 9rem/@pTor;
+  font-size: 40rem/@pTor;
+}
+
+.content{
+  font-family: @font-regular;
+}
+
+.content  div :global(.am-list-item .am-list-line .am-list-content){
+  color:@font-color-A5A5A5;
+  font-size:14.5rem/@pTor;
+}
+
+.content div :global(.am-list-item) {
+   height: 55rem/@pTor;
+}
+
+.content  div :global(.am-list-item .am-list-line .am-list-extra) {
+  color: @font-color-2D2D2D;
+}

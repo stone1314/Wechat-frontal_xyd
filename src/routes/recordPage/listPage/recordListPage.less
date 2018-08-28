@@ -1,0 +1,110 @@
+@import '../../../commonStyle/commonStyleConstants.less';
+
+.rlproot {
+  //display: flex;
+  height: 100%;
+  width: 100%;
+  background: @fill-color-EEEEEE; //rgb(255, 255, 255);
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.rlproot :global(.am-list-item .green .am-list-line .am-list-extra){
+  color:@fill-color-3BB200;
+}
+
+.recordSuccess{
+  color:@fill-color-3BB200;
+  font-size:@text-font-14;
+}
+.recordFaild{
+  color:@font-color-B80000;
+  font-size:@text-font-14;
+}
+.recordDoing{
+  color:@background-FF7800;
+  font-size:@text-font-14;
+}
+
+.carousel{
+  width: 100%;
+  height: 154rem/@pTor;
+}
+
+
+
+.title {
+  background-color: @fill-color-FFFFFF;
+  color: @font-color666;
+  padding: 12.5rem/@pTor 12.5rem/@pTor 12.5rem/@pTor 15rem/@pTor;
+}
+
+.title div{
+  display: inline-block;
+}
+
+.title  span {
+  display: inline;
+  line-height: 156%;
+  float: left;
+}
+
+
+div .interval{
+  border:15rem/@pTor solid #8880;
+
+}
+
+.listPage(){
+}
+
+
+.listPage :global(.am-list-header){
+  padding:15rem/@pTor 0 0 0;
+  font-size: 14px;
+  color: #888;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.listPage:global(div .am-list-item){
+   height:67rem/@pTor;
+ }
+
+.listPage div:global(.am-list-item .am-list-line .am-list-content ){
+  flex: 11;
+  color: #000;
+  font-size: @text-font-big;
+  line-height: 1.5;
+  text-align: left;
+  width: auto;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listPage div :global(.am-list-item .am-list-line .am-list-brief){
+  color: #888;
+  font-size: @text-font-micro;
+  line-height: 1.5;
+  margin-top:0;
+  width: auto;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.noLendInfo{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: @button_b-font-big;
+  color: @font-color-nomal-deep;
+}

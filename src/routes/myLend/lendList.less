@@ -1,0 +1,103 @@
+@import "../../commonStyle/commonStyleConstants";
+.lendList{
+  display:flex;
+  height: 100%;
+  width:100%;
+  background: @background-all;
+  flex-direction: column;
+  overflow-y: auto;
+  font-family: @font-regular;
+  .backBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40rem/@pTor;
+    background-color: #FFFFFF;
+    font-family: @font-regular;
+    color: @font-color666;
+    font-size: 14rem/@pTor;
+    box-sizing: border-box;
+    .backImg{
+      margin-left: 11rem/@pTor;
+      margin-right: 6rem/@pTor;
+      width: 10rem/@pTor;
+      height: 18rem/@pTor;
+    }
+    .backImgText{
+      width: 28rem/@pTor;
+      height: 40rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+    }
+    .backTitle{
+      width: 270rem/@pTor;
+      height: 40rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .backPro{
+      width: 50rem/@pTor;
+      height: 40rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  .noLendInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: @button_b-font-big;
+    color: @font-color-nomal-deep;
+  }
+  .overDiv{
+    width: 100%;
+    height: 100%-(220rem/@pTor);
+    overflow-y: auto;
+    .lendDetail{
+      width:100%;
+      height:67rem/@pTor;
+      display: flex;
+      flex-direction: column;
+      background-color: @background-FFFFFF;
+      margin-top: 15rem/@pTor;
+      .lendName{
+        width: 100%;
+        height:42rem/@pTor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: @fill-color-2D2D2D;
+        font-size: @text-font-big;
+      }
+      .lendDate{
+        width: 100%;
+        height:25rem/@pTor;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        color: @font-color-declare-light;
+        font-size: @text-font-micro;
+      }
+      .lendLeft{
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        padding-left: 15rem/@pTor;
+      }
+      .lendRight{
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding-right: 15rem/@pTor;
+      }
+    }
+  }
+
+}

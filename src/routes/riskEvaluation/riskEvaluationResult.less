@@ -1,0 +1,150 @@
+@import '../../commonStyle/commonStyleConstants';
+
+.root {
+  display: flex;
+  flex:1;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background:@background-all;
+  overflow-y:auto;
+}
+
+.promptContainer{
+  height:324rem/@pTor;
+  width:100%;
+  padding-left: 18rem/@pTor;
+  padding-right: 18rem/@pTor;
+  box-sizing: border-box;
+  background-color: white;
+  display: inline-block;
+  //flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem/@pTor;
+}
+
+.picturePromptContainer{
+  background: url(../../asserts/riskEvaluationResult/bg@2x.png);
+  height:326rem/@pTor;
+  width:100%;
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.PPCTitle{
+  font-family:@font-regular;
+  color:@font-color-nomal-light;
+  margin-top:41rem/@pTor;
+  margin-bottom: 14rem/@pTor;
+  font-size: @text-font-micro;
+}
+
+.PPCResult{
+  font-family:@font-regular;
+  color:@brand-primary-menuBtn-fontcolor;
+  margin-bottom: 75rem/@pTor;
+  font-size: 35rem/@pTor;
+}
+
+.PPCResultSmall{
+  font-size:@button_m-font-big;
+  font-family:@font-regular;
+  color:@font-color666;
+  line-height:25rem/@pTor;
+}
+
+.PPCResultTimeC{
+  margin-top:25rem/@pTor;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+}
+
+.PPCResultTime{
+  font-size:@button_m-font-big;
+  font-family:@font-regular;
+  color:@font-color-nomal-light;
+}
+
+.PPCResultOut{
+  width:64rem/@pTor;
+  height:26rem/@pTor;
+  background-color: @fill-color-BBBBBB;
+  color:white;
+  font-size: 18rem/@pTor;
+  font-family: @font-regular-light;
+  line-height:26rem/@pTor;
+  display: inline-block;
+  transform: scale(0.5);
+  text-align: center;
+  transform-origin: 0 50%;
+  margin-left: 6.5rem/@pTor;
+}
+
+.reEvaBtn{
+ width:62rem/@pTor;
+ height:20rem/@pTor;
+ border: solid 1px @brand-primary-light;
+ border-radius: 10rem/@pTor;
+ color:@brand-primary-light;
+ font-size: @text-font-micro;
+ line-height: 20rem/@pTor;
+ text-align: center;
+}
+
+.introduce{
+  margin:15rem/@pTor 18rem/@pTor 15rem/@pTor 18rem/@pTor;
+  align-self: flex-start;
+  color:@font-color-nomal-light;
+  font-size: @text-font-12;
+}
+
+.sep{
+  margin-left:18rem/@pTor;
+  height:1px;
+  background-color: gray;
+  align-self: flex-start;
+  transform: scaleY(0.5)
+}
+
+.QAQ{
+  position:relative;
+  margin-left:18rem/@pTor;
+  display:flex;
+  align-items: center;
+  overflow-x: visible;
+  margin-top:9rem/@pTor;
+  margin-bottom: 5rem/@pTor;
+  color:@brand-primary-menuBtn-fontcolor;
+  font-size: @text-font-12;
+}
+
+.QAcontainer{
+  width:100%;
+}
+
+.QAQ:before{
+  width:2.5rem/@pTor;
+  height:6rem/@pTor;
+  background-color: @brand-primary-menuBtn-fontcolor;
+  position: absolute;
+  z-index: 999;
+  content: "";
+  left:-7.5rem/@pTor;
+}
+
+.QAA{
+  margin-left:18rem/@pTor;
+  margin-right:18rem/@pTor;
+  height: 35rem/@pTor;
+  color: @font-color666;
+  font-size: @text-font-12;
+
+}
+

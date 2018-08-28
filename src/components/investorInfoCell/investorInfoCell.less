@@ -1,0 +1,92 @@
+@import '../../commonStyle/commonStyleConstants';
+.root {
+  width: 100%;
+  height:122rem/@pTor;
+  background-color: white;
+  padding:16rem/@pTor 17rem/@pTor 0 12rem/@pTor;
+  display:flex;
+  min-height:122rem/@pTor;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 15rem/@pTor;
+  font-size: 12rem/@pTor;
+}
+
+.firstLine{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 15rem/@pTor;
+}
+.ffPart{
+  display:flex;
+  flex-direction: row;
+}
+
+.colorPoint{
+  margin-top:3rem/@pTor;
+  margin-right:3rem/@pTor;
+  width:3rem/@pTor;
+  height:10rem/@pTor;
+  background:@brand-primary-light;
+  border-radius:1.5rem/@pTor;;
+}
+
+.green{
+  color:#29A000;
+  font-size: 12rem/@pTor;
+}
+
+.secondLine{
+  display:flex;
+  width:100%;
+  margin-top:19rem/@pTor;
+  font-size: 11rem/@pTor;
+}
+
+.onePart{
+  position: relative;
+  width:43.86%;
+  color:@brand-primary-light;
+}
+
+.onePart:before{
+  content: attr(title);
+  position: absolute;
+  top:20rem/@pTor;
+  color:#8D8D8D;
+}
+
+
+.secPart{
+  position: relative;
+  width:23.07%;
+  color:@brand-primary-light;
+}
+
+.secPart:before{
+  content: attr(title);
+  position: absolute;
+  top:20rem/@pTor;
+  color:#8D8D8D;
+}
+
+.thrPart{
+  position: relative;
+  width:33.07%;
+  color:#8D8D8D
+}
+
+.thrPart:before{
+  content: attr(title);
+  position: absolute;
+  top:20rem/@pTor;
+  color:#8D8D8D;
+}
+
+.bigger{
+  font-size: 19rem/@pTor;
+}
+
+

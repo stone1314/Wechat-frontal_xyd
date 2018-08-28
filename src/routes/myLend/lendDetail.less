@@ -1,0 +1,391 @@
+@import "../../commonStyle/commonStyleConstants";
+.lendList {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: @background-all;
+  flex-direction: column;
+  overflow-y: auto;
+  font-family: @font-regular;
+  .backBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40rem/@pTor;
+    background-color: #FFFFFF;
+    font-family: @font-regular;
+    color: @font-color666;
+    font-size: 14rem/@pTor;
+    box-sizing: border-box;
+    .backImg{
+      margin-left: 11rem/@pTor;
+      margin-right: 6rem/@pTor;
+      width: 10rem/@pTor;
+      height: 18rem/@pTor;
+    }
+    .backImgText{
+      width: 28rem/@pTor;
+      height: 40rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+    }
+    .backTitle{
+      width: 270rem/@pTor;
+      height: 40rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .backPro{
+      width: 50rem/@pTor;
+      height: 40rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  .noLendInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: @button_b-font-big;
+    color: @font-color-nomal-deep;
+  }
+  .ldContent{
+    width: 100%;
+    height: 100%-(220rem/@pTor);
+    overflow-y: auto;
+    position: relative;
+    box-sizing: border-box;
+    .hidDiv{
+      position: absolute;
+      box-sizing: border-box;
+      padding:9rem/@pTor 14rem/@pTor;
+      color: #655600;
+      width: 100%;
+      height: 49rem/@pTor;
+      background-color: #FFDD20;
+      animation:hidDivmove 2s ;
+      -webkit-animation:hidDivmove 2s;/*Safari and Chrome*/
+      animation-fill-mode : forwards;
+      animation-delay:6s;
+      z-index: 99;
+    }
+    @keyframes hidDivmove
+    {
+      from {top:0rem/@pTor;}
+      to {top:-49rem/@pTor;}
+    }
+    @-webkit-keyframes hidDivmove /*Safari and Chrome*/
+    {
+      from {top:0rem/@pTor;}
+      to {top:-49rem/@pTor;}
+    }
+    .lendline{
+      width: 1rem/@pTor;
+      height: 210rem/@pTor;
+      border-right: 1rem/@pTor solid @background-FFFFFF;
+      position: absolute;
+      top: 27rem/@pTor;
+      left: 32.5rem/@pTor;
+    }
+    .lendDateStep{
+      width: 100%;
+      height:302rem/@pTor;
+      background: linear-gradient(@background-F75A0E,@background-FF7431);
+    }
+    .lendDateStepH{
+      width: 100%;
+      height:352rem/@pTor;
+      background: linear-gradient(@background-F75A0E,@background-FF7431);
+    }
+    .lendStep{
+      width:100%;
+      height:70rem/@pTor;
+      box-sizing: border-box;
+      .lendDate{
+        width: 100%;
+        height: 43rem/@pTor;
+        display: flex;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding-top: 20rem/@pTor;
+        .lendDatePoint{
+          width: 62rem/@pTor;
+          box-sizing: border-box;
+          padding-right: 20rem/@pTor;
+          padding-top: 5rem/@pTor;
+          display: flex;
+          justify-content: flex-end;
+          .point{
+            width: 8rem/@pTor;
+            height: 8rem/@pTor;
+            border-radius: 4rem/@pTor;
+            background-color: @font-colorFFF;
+          }
+        }
+        .lendDateText{
+          display: flex;
+          justify-content: flex-start;
+          width: 270rem/@pTor;
+          font-size: @button_b-font-big;
+          color: @font-colorFFF;
+        }
+        .lendDateTextSmall{
+          display: flex;
+          justify-content: flex-start;
+          width: 270rem/@pTor;
+          font-size: @text-font-small;
+          color: @font-colorFFF;
+        }
+        .lendDateBtn{
+          width: 78rem/@pTor;
+          .lendDateBtnText{
+            width: 54rem/@pTor;
+            height: 20rem/@pTor;
+            border : 1rem/@pTor solid @font-colorFFF;
+            border-bottom-left-radius: 10rem/@pTor;
+            border-top-left-radius: 10rem/@pTor;
+            border-bottom-right-radius: 10rem/@pTor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: @font-colorFFF;
+          }
+        }
+      }
+      .lendTitle{
+        height: 27rem/@pTor;
+        margin-left: 58rem/@pTor;
+        margin-right: 18rem/@pTor;
+        color: @font-colorFFF;
+        font-size: @text-font-small;
+        border-bottom: 1rem/@pTor solid @background-DDDDDD;
+      }
+      .lendTitleNo{
+        height: 27rem/@pTor;
+        margin-left: 58rem/@pTor;
+        margin-right: 18rem/@pTor;
+        color: @font-colorFFF;
+        font-size: @text-font-small;
+      }
+    }
+    .lendPrompt{
+      width: 297rem/@pTor;
+      height: 50rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1rem/@pTor solid @background-FFFFFF;
+      color: @font-colorFFF;
+      font-size: @text-font-small;
+      margin-left: 58rem/@pTor;
+      margin-top: -3rem/@pTor;
+      padding: 0 12rem/@pTor;
+      box-sizing: border-box;
+    }
+
+    .quitDate{
+      width: 100%;
+      height: 51rem/@pTor;
+      display: flex;
+      align-items: center;
+      background-color: @background-FFFFFF;
+      margin-top: 15rem/@pTor;
+      .quitDateD{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 257rem/@pTor;
+        height: 51rem/@pTor;
+        color: @font-color-nomal-deep;
+        font-size: @text-font-caption;
+        padding-left: 14rem/@pTor;
+        .quitDateDa{
+          margin: 0 6rem/@pTor;
+          color: @font-colorF75A0E;
+        }
+      }
+      .quitDateT{
+        width: 78rem/@pTor;
+        height: 51rem/@pTor;
+        font-size: @text-font-small;
+        color: @font-colorAFACAC;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .userMsgRight{
+        width: 40rem/@pTor;
+        height: 51rem/@pTor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: @fill-color-C5C5C5;
+      }
+    }
+    .quitDateBtnLine{
+      width: 100%;
+      height: 42rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .quitDateBtn{
+        width: 14rem/@pTor;
+        height: 14rem/@pTor;
+        background-color: @font-color-prompt;
+        border-radius: 7rem/@pTor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: @font-colorF0EFF5;
+        font-size: @text-font-12;
+      }
+      .quitDateBtnText{
+        width: 80rem/@pTor;
+        height: 12rem/@pTor;
+        color: @font-color-prompt;
+        font-size: @text-font-12;
+        margin-left: 6rem/@pTor;
+        margin-right: 14rem/@pTor;
+        box-sizing: border-box;
+      }
+    }
+    .lendTable{
+      width: 100%;
+      background-color: @background-FFFFFF;
+      margin-top: 11rem/@pTor;
+      margin-bottom: 22rem/@pTor;
+      .lendHead{
+        width: 353rem/@pTor;
+        height: 56rem/@pTor;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: @text-font-caption;
+        color: @font-color-nomal-light;
+        margin-left: 22rem/@pTor;
+        box-sizing: border-box;
+        border-bottom: 1rem/@pTor solid @fill-color-EEEEEE;
+        margin-bottom: 10rem/@pTor;
+      }
+      .lendBody{
+        width: 100%;
+        min-height: 35rem/@pTor;
+        padding-left: 22rem/@pTor;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        .lendBodyKey{
+          flex-grow: 1;
+          font-size: @text-font-mid;
+          color: @font-color-declare-light;
+          min-width: 112rem/@pTor;
+          display: flex;
+          //align-items: center;
+          //justify-content: flex-start;
+          flex-direction: column;
+          .lendBodyKeyL{
+            padding-left: 7rem/@pTor;
+            font-size: @text-font-small;
+            display: block;
+          }
+        }
+        .lendBodyValue{
+          flex-grow: 1;
+          display: flex;justify-content: flex-end;
+          font-size: @text-font-mid;
+          color: @font-color-nomal-light;
+          padding-right: 22rem/@pTor;
+          text-align:right;
+        }
+      }
+    }
+    .lendBottomBtn{
+      position: fixed;
+      bottom:0;
+      width: 100%;
+      height: 55rem/@pTor;
+      background-color: @font-colorF75A0E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: @text-font-caption;
+      color: @font-color-white;
+    }
+    .zhanwei{
+      height: 55rem/@pTor;
+    }
+  }
+  .lendBlack{
+    width: 100%;
+    height:100%-(220rem/@pTor);
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:40rem/@pTor;
+    z-index: 10;
+    color: @font-color1683F8;
+    font-size: @button_b-font-hug;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    .lendBlackOK{
+      width: 355rem/@pTor;
+      background-color: @background-FFFFFF;
+      border-radius: 13rem/@pTor;
+      .lendBlackText{
+        width: 355rem/@pTor;
+        height: 57rem/@pTor;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+      }
+      .lendBlackTextBorder{
+        width: 355rem/@pTor;
+        height: 57rem/@pTor;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        border-bottom: 1rem/@pTor solid @background-4B4B4B;
+      }
+    }
+    .lendBlackCancel{
+      width: 355rem/@pTor;
+      height: 57rem/@pTor;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      background-color: @background-FFFFFF;
+      border-radius: 13rem/@pTor;
+      margin-top: 8rem/@pTor;
+      margin-bottom: 10rem/@pTor;
+    }
+  }
+
+}
+.modal{
+}
+.checkPwd{
+  width: 100%;
+  height: 50rem/@pTor;
+  background-color: @background-F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .checkPwdText{
+    background-color: @background-F7F7F7;
+    border: none;
+    font-size: @text-font-big;
+  }
+  .checkPwdImg{
+    color: @brand-primary-light;
+  }
+}
+.dateText{
+  font-size: @text-font-big;
+  color: @background-000000;
+}

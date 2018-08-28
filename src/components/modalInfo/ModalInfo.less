@@ -1,0 +1,79 @@
+/**
+ * Created by abrahamchen on 2017/9/27.
+ */
+
+ @import '../../commonStyle/commonStyleConstants';
+.root {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  box-sizing: border-box;
+ // filter:blur(10px);
+}
+
+:global(.Modalinfo .am-modal-content){
+  border-radius: 0 !important;
+}
+
+.overlay {
+  width:100%;
+  height:50%;
+  z-index: 1000;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.content{
+  position: relative;
+  background-color: white;
+  width:100%;
+  height:334rem/@pTor;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15rem/@pTor;
+  padding-right: 15rem/@pTor;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title{
+  font-size: @text-font-big;
+  font-family: @font-regular;
+  margin-top: 19rem/@pTor;
+  margin-bottom: 19rem/@pTor;
+  color:black;
+}
+
+.sep{
+  background-color: @border-color-base;
+  width:100%;
+  height: 0.5px;
+}
+
+.contentText{
+  color:black;
+  font-size: @text-font-mid;
+  font-family: @font-regular;
+  flex:1;
+  min-width: 100%;
+  margin-top:22rem/@pTor;
+  text-align: start;
+}
+
+.grayCross{
+  width:20rem/@pTor;
+  height:20rem/@pTor;
+  position: relative;
+  bottom:11rem/@pTor;
+}

@@ -1,0 +1,93 @@
+/**
+ * Created by abrahamchen on 2017/9/18.
+ */
+
+
+/**
+ * 淡入淡出
+ */
+:global(.tranFade-enter) {
+  opacity: 0.01;
+
+}
+
+:global(.tranFade-enter.tranFade-enter-active) {
+  transition: opacity 300ms ease-in;
+  opacity: 1;
+}
+
+:global(.tranFade-leave) {
+  opacity: 1;
+
+
+}
+
+:global(.tranFade-leave.tranFade-leave-active) {
+  transition: opacity 300ms ease-in;
+  opacity: 0;
+
+}
+
+:global(.tranFade) {
+  position: relative;
+}
+
+
+/**
+ * 右边进入
+ */
+:global(.tranRight-enter) {
+  transform: translate(100%);
+
+}
+
+:global(.tranRight-enter.tranRight-enter-active) {
+  transition: transform 300ms ease-in;
+  transform: translate(0%);
+}
+
+:global(.tranRight-leave) {
+  transform: translate(0%);
+
+
+}
+
+:global(.tranRight-leave.tranRight-leave-active) {
+  transition: transform 300ms ease-in;
+  transform: translate(-100%);
+
+}
+
+:global(.tranRight) {
+  position: relative;
+}
+
+
+/**
+ * 左边进入
+ */
+:global(.tranLeft-enter) {
+  transform: translate(-100%);
+
+}
+
+:global(.tranLeft-enter.tranLeft-enter-active) {
+  transition: transform 300ms ease-in;
+  transform: translate(0%);
+}
+
+:global(.tranLeft-leave) {
+  transform: translate(0%);
+
+
+}
+
+:global(.tranLeft-leave.tranLeft-leave-active) {
+  transition: transform 300ms ease-in;
+  transform: translate(100%);
+
+}
+
+:global(.tranLeft) {
+  position: relative;
+}

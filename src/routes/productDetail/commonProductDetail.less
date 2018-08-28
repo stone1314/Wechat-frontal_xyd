@@ -1,0 +1,138 @@
+@import '../../commonStyle/commonStyleConstants';
+
+.root {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background:@background-all;
+  overflow-y:auto;
+}
+
+.titleView{
+  width:100%;
+  height:184rem/@pTor;
+  background: linear-gradient(#F75A0E,#FF7431 );
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 20rem/@pTor;
+}
+
+.rateContainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate{
+    font-size: @text-font-hug;
+    color: white;
+    font-family: @font-regular-Medium;
+    position: relative;
+}
+
+.rate::after{
+    width:59rem/@pTor;
+    height:24rem/@pTor;
+    border: solid 0.5px white;
+    color:white;
+    content: attr(addPercent);
+    font-size: @text-font-12;
+    position: absolute;
+    top:-8rem/@pTor;
+    box-sizing: border-box;
+    padding: 0 6rem/@pTor;
+    line-height: 24rem/@pTor;
+    border-radius: 12rem/@pTor 12rem/@pTor 12rem/@pTor 0;
+    
+}
+
+.ratePercent{
+    font-size: @text-font-12;
+    color: white;
+    font-family: @font-regular;
+}
+
+.rateIntroduce{
+    font-size: @text-font-micro;
+    color: rgba(255,255,255,0.6);
+    font-family: @font-regular-Medium;
+    position: relative;
+    margin-top: 7.5rem/@pTor;
+}
+
+.buyProgressContainer{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    color:white;
+    font-size: @text-font-tiny;
+    margin-top: 25rem/@pTor;
+}
+
+.buyProgress{
+    width:50%;
+    background-color: rgba(255,255,255,0.5);
+    position: relative;
+    height:3rem/@pTor;
+    border-radius: 1.5rem/@pTor;
+    margin-right: 5rem/@pTor;
+}
+
+.buyProgressBody{
+    width:0;
+    content: '  ';
+    background-color: white;
+    position: absolute;
+    height:3rem/@pTor;
+    border-radius: 1.5rem/@pTor;
+    transition: all 1s;
+}
+
+.buyInfoContainer{
+    width:100%;
+    height:50rem/@pTor;
+    display:flex;
+    margin-top: 21rem/@pTor;
+    
+}
+
+.buyInfoCell{
+    width:333.333%;
+    text-align: center;
+    color:white;
+    font-size: @text-font-small;
+    position: relative;
+}
+
+.buyInfoCell::after{
+    width:100%;
+    content:attr(valueTitle);
+    text-align: center;
+    color:rgba(255,255,255,0.6);
+    font-size: @text-font-micro;
+    position: absolute;
+    left:0;
+    top:22rem/@pTor;
+}
+
+
+.nextButton{
+    position: fixed !important;
+    bottom: 0;
+    height: 50rem/@pTor;
+    min-height: 50rem/@pTor;
+    margin-top:30rem/@pTor;
+    width:100%;
+    line-height: 50rem/@pTor;
+    border-radius: 0px;
+    background-color:@brand-primary-light;
+    font-size: @text-font-big;
+    color: #FFFFFF !important;
+    display: block;
+}

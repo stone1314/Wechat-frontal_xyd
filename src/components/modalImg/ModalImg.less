@@ -1,0 +1,42 @@
+
+@import '../../commonStyle/commonStyleConstants';
+.root {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  // filter:blur(10px);
+}
+
+
+.title{
+  font-size: @text-font-big;
+  font-family: @font-regular;
+  margin-top: 19rem/@pTor;
+  margin-bottom: 19rem/@pTor;
+  color:black;
+}
+
+.root :global(.am-modal-content) {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.grayCross{
+  width:300rem/@pTor;
+  height:330rem/@pTor;
+  position: relative;
+  bottom: 20rem/@pTor;
+}
+
+.ximg{
+  width:29rem/@pTor;
+  height:29rem/@pTor;
+  margin-right: 48rem/@pTor;
+  margin-bottom: 15rem/@pTor;
+}
+
+
+
+

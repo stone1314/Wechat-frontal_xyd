@@ -1,0 +1,143 @@
+@import "../../../commonStyle/commonStyleConstants";
+
+.deposit {
+  width: 100%;
+  height: 100%;
+  font-family: @font-regular;
+  .icon {
+    color: @font-color-black;
+  }
+  .iconText {
+    color: @font-color-black;
+    font-size: 16rem/@pTor;
+    margin-left: -10px;
+  }
+  .title {
+    color: @font-color-nomal-light;
+    font-size: 18rem/@pTor
+  }
+  .listBody {
+    height: 133rem/@pTor;
+    .listItem {
+      height: 67rem/@pTor;
+    }
+    .thumbBankDiv {
+      border-radius: 23rem/@pTor;
+      width: 45rem/@pTor;
+      height: 45rem/@pTor;
+      text-align: center;
+      .thumbIcon {
+        height: 26rem/@pTor;
+        width: 26rem/@pTor;
+        margin: 10rem/@pTor;
+      }
+    }
+    .thumbCoinDiv {
+      border: #cfcfcf 1px solid;
+      border-radius: 23rem/@pTor;
+      width: 45rem/@pTor;
+      height: 45rem/@pTor;
+      text-align: center;
+      .thumbIcon {
+        height: 32rem/@pTor;
+        width: 32rem/@pTor;
+        margin: 6rem/@pTor;
+      }
+    }
+    .title {
+      color: @font-color-nomal-deep;
+      font-size: 16rem/@pTor;
+      .moneyColor {
+        color: @font-color-listEarning
+      }
+    }
+    .subtitle {
+      color: @font-color-listGray;
+      font-size: 12rem/@pTor;
+    }
+  }
+  .inputItem {
+    height: 51rem/@pTor;
+  }
+  .btnSure {
+    background: @brand-primary-deep;
+    color: @font-color-white
+  }
+  .question {
+    color: #4E8CEF;
+    font-size: 12rem/@pTor;
+    text-align: center;
+    .qMark {
+      background: #4E8CEF;
+      height: 14rem/@pTor;
+      width: 14rem/@pTor;
+      color: @font-color-white;
+      border-radius: 10rem/@pTor;
+      font-size: @text-font-small;
+      display: inline-block;
+    }
+    .qText {
+      display: inline-block;
+      padding-left: 6rem/@pTor;
+    }
+  }
+  .tips {
+    color: #0099CC;
+    padding: 16rem/@pTor;
+    .tipMark {
+      position: absolute;
+      height: 15rem/@pTor;
+      width: 15rem/@pTor;
+    }
+    .tipText {
+      margin-left: 20px;
+    }
+  }
+  .allWithdrawText {
+    color: #0099CC;
+  }
+  .noticeBottom {
+    color: #0099cc;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    position: relative;
+    img {
+      position: absolute;
+      height: 15rem/@pTor;
+      width: 15rem/@pTor;
+      left: 15px;
+    }
+    .noticeBottomText {
+      text-align: left;
+      word-break: break-all;
+    }
+  }
+}
+.deposit :global(.am-button.am-button-disabled) {
+  opacity: 1;
+  span{
+    opacity: 0.6;
+  }
+}
+//.deposit :global(.am-list-item .am-input-control input){
+//  margin: 2px 0 0px 0;
+//  font-size:16px;
+//}
+.modalHeader {
+
+}
+
+.modalBody {
+  color: #000000;
+  font-size: 16rem/@pTor;
+}
+
+.modalBtn {
+  color: #a5a5a5;
+  font-size: 14rem/@pTor;
+}
+
+.modalFooter {
+  color: #0080FC;
+  font-size: 34rem/@pTor;
+}
